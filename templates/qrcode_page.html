@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+	<style>
+		h1.small,p.small {
+  			line-height: 0.7;
+		}
+	</style>
+</head>	
+	<body>
+		<h1 class="small" align="center">Your Payment is successfully processed.</h1>
+		<p class ="small" align="center" style ="font-size:40px" >Your Ride's QR code :</p>
+		<h3 style="color:red; font-style: bold; text-align: center; ">** Please take a screenshot of the qr code or write your OTP, One is required to collect your bike!</h3>
+			
+		<table align ="center" border ="2">
+			<tr>
+				<th>
+					<img src="{% static 'images/test.jpg' %}">
+				</th>
+			</tr>
+		</table>
+		<p class="small" align="center" style="font-size:40px">OTP  :  {{ otp }}</p>
+		<div style="text-align:center">
+        <input type="submit" align="center" value="Home" onclick="location.href = '/rent_now';" id="btn" >
+        </div>
+		
+				
+	</body>
+</html>	

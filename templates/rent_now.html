@@ -1,0 +1,337 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="{% static 'images/bike.png' %}" type="image/x-icon" />
+    <!-- endbuild -->
+    <title>CITY ON BIKES</title>
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+
+<!--=== Bootstrap CSS ===-->
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!--=== FontAwesome CSS ===-->
+      <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <!--=== Theme Reset CSS ===-->
+     <link href="{% static 'css/reset.css' %}" rel="stylesheet">
+    <!--=== Slicknav CSS ===-->
+    <link href="{% static 'css/plugins/slicknav.min.css' %}" rel="stylesheet">
+    <!--=== Magnific Popup CSS ===-->
+    <link href="{% static 'css/plugins/magnific-popup.css' %}" rel="stylesheet">
+    <!--=== Owl Carousel CSS ===-->
+    <link href="{% static 'css/plugins/owl.carousel.min.css' %}" rel="stylesheet">
+    <!--=== Gijgo CSS ===-->
+    <link href="{% static 'css/plugins/gijgo.css' %}" rel="stylesheet">
+   
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+    <!--=== Responsive CSS ===-->
+        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    
+
+</head>
+<div class="container">
+            <div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true" >×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Royal Enfield Classic 350</h4>
+                                            
+                                        </div>
+                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
+                                                <img  style="height:150px;" src="{% static 'images/enfield2.jpg' %}">
+                                               <div class="col-12 col-sm-auto">
+                                                <p>Price per hour : ₹ 60.00</p>
+                                                <p>Engine Type: 249cc liquid-cooled</p>
+                                               <p> Fuel Capacity: 13.5 Ltr</p>
+                                                <p>Power:10.74 PS @ 7500 rpm</p>
+                                            </div>
+                                        </div>
+                                                                               
+                                    </div>
+                                </div>
+                               <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Deluxe</h4>
+                                            
+                                        </div>
+                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
+                                            <img  style="height:150px;" src="{% static 'images/deluxe.png' %}">
+                                            <div class="col-12 col-sm-auto">
+                                                <p>Price per hour : ₹ 20.00</p>
+                                                <p>Engine Type: 249cc liquid-cooled</p>
+                                               <p> Fuel Capacity: 13.5 Ltr</p>
+                                                <p>Power:10.74 PS @ 7500 rpm</p>
+                                            </div>
+                                        </div>
+                                                                                
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Splender Plus</h4>
+                                            
+                                        </div>
+                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
+                                            <img  style="height:150px;" src="{% static 'images/Splender.jpg' %}">
+                                            <div class="col-12 col-sm-auto">
+                                                <p>Price per hour : ₹ 25.00</p>
+                                                <p>Engine Type: 249cc liquid-cooled</p>
+                                               <p> Fuel Capacity: 13.5 Ltr</p>
+                                                <p>Power:10.74 PS @ 7500 rpm</p>
+                                            </div>
+                                            </div>
+                                                                               
+                                        </div>
+                                    </div>
+                                
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Pleasure</h4>
+                                            
+                                        </div>
+                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
+                                            <img  style="height:150px;" src="{% static 'images/Pleasure.png' %}">
+                                           <div class="col-12 col-sm-auto">
+                                                <p>Price per hour : ₹ 30.00</p>
+                                                <p>Engine Type: 249cc liquid-cooled</p>
+                                               <p> Fuel Capacity: 13.5 Ltr</p>
+                                                <p>Power:10.74 PS @ 7500 rpm</p>
+                                            </div>
+                                        </div>                                     
+                                     </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Passion Pro</h4>
+                                            
+                                        </div>
+                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
+                                            <img  style="height:150px;" src="{% static 'images/passion.png' %}">
+                                           <div class="col-12 col-sm-auto">
+                                                <p>Price per hour : ₹ 30.00</p>
+                                                <p>Engine Type: 249cc liquid-cooled</p>
+                                               <p> Fuel Capacity: 13.5 Ltr</p>
+                                                <p>Power:10.74 PS @ 7500 rpm</p>
+                                            </div>
+                                        </div>                                     
+                                     </div>
+                                </div>
+
+                                </div>
+                                  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only" >Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExample" style="color: black" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                            
+
+                            <div class="modal-footer bikemodalclose">
+                                <button type="button" class="btn btn-secondary" id="bikemodal" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+<body class="loader-active">
+
+    
+    <header id="header-area" class="fixed-top">
+        <!--== Header Top Start ==-->
+        <div id="header-top" class="d-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-left">
+                        <i class="fa fa-map-marker"></i> Mansarovar, Jaipur, India
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-center">
+                        <i class="fa fa-mobile"></i> +91 9638527410
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Single HeaderTop Start ==-->
+                    <div class="col-lg-3 text-center">
+                        <i class="fa fa-clock-o"></i> Mon-Sun 06.00 AM - 11.00 PM
+                    </div>
+                    <!--== Single HeaderTop End ==-->
+
+                    <!--== Social Icons Start ==-->
+                    <div class="col-lg-3 text-right">
+                        <div class="header-social-icons">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                          
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!--== Social Icons End ==-->
+                </div>
+            </div>
+        </div>
+        <!--== Header Top End ==-->
+
+        <!--== Header Bottom Start ==-->
+        <div id="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <!--== Logo Start ==-->
+                    <div class="col-lg-4">
+                       <a class="navbar-brand" href="/">CITY ON BIKES</a><i class="fa fa-motorcycle fa-2x" style="padding: 5%;" aria-hidden="true" ></i>
+                    </div>
+                    <!--== Logo End ==-->
+
+                    <!--== Main Menu Start ==-->
+                    <div class="col-lg-8 d-none d-xl-block">
+                        <nav class="mainmenu alignright">
+                            <ul>
+                                 <li class="active"><a href="#">RENT NOW</a></li>
+                                <li>
+                                     <a href="{% url 'about' %}">About</a>
+                                    
+                                </li>
+                               <li><a href="#" class="bikebutton">Bikes</a></li>
+                                
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+
+                                <li>
+                                    <a href="#">{{request.user}}</a>
+                                    <ul>
+                                        <li><a href="#">Rides</a></li>
+                                        <li><a href="{% url 'logoutUser' %}">Log Out</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--== Main Menu End ==-->
+                </div>
+            </div>
+        </div>
+        <!--== Header Bottom End ==-->
+    </header>
+    <!--== Header Area End ==-->
+
+    <!--== SlideshowBg Area Start ==-->
+    <section id="slideslow-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="slideshowcontent">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h1>RENT A BIKE NOW!</h1>
+                                <p>FOR AS LOW AS Rs. 100 A DAY PLUS 15% DISCOUNT <br> FOR OUR REGULAR CUSTOMERS</p>
+
+                                <div class="book-ur-car">
+                                    <form method="post" action="">
+                                        {% csrf_token %}
+                                        <div class="pick-location bookinput-item">
+                                            <select class="custom-select" name="loc" id="loc">
+                                                <option selected>Pick Location</option>
+                                                <option value="Mansarovar">Mansarovar</option>
+                                                <option value="C-Scheme">C-Scheme</option>
+                                                <option value="Sodala">Sodala</option>
+                                                <option value="Bais Godam">Bais Godam</option>
+                                                <option value="Sanganer">Sanganer</option>
+
+
+                                            </select>
+                                        </div>
+
+
+
+                                        <div class="pick-date bookinput-item">
+                                            <input type="time" id="startDate2" placeholder="SELECT TIME" name="startDate2" />
+                                        </div>
+
+                                        <div class="retern-date bookinput-item">
+                                            <input type="time" id="endDate2" placeholder="RETURN TIME" name="endDate2" />
+                                        </div>
+
+                                        <div class="car-choose bookinput-item">
+                                            <select class="custom-select" name="choose_bike">
+                                                <option selected>Choose Bike</option>
+                                                <option value="Deluxe">Deluxe</option>
+                                                <option value="Pleasure">Pleasure</option>
+                                                <option value="Passion Pro">Passion Pro</option>
+                                                <option value="Splendor Plus">Splendor Plus</option>
+                                                <option value="Royal Enfield 200CC">Royal Enfield 200CC</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="bookcar-btn bookinput-item">
+                                            <input class="btn login_btn" type="submit" value="RENT BIKE" >
+
+                                        </div>
+                                    </form>
+                                </div>
+                                {% for message in messages %}
+                                <p id="messages">{{message}}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    
+    <script>
+        
+        
+            var c=new Date();
+            var time=c.getHours() + ":" + c.getMinutes();
+            var x=document.getElementById('startDate2');
+            x.setAttribute("value",time);
+
+            $('.bikebutton').click(function(){
+            $('#bikemodal').modal("toggle");
+            $('#bikemodal').modal("show");
+            });
+            $(".bikemodalclose").click(function(){
+            $('#bikemodal').modal("hide");
+            });
+        
+    </script>
+</body>
+</html>
