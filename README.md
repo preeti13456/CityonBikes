@@ -26,12 +26,12 @@ We are a leading motorbike rental company that offers a diversified and exceptio
  
 # Tech Stack 
 
- Frontend: HTML, CSS, JavaScript 
- 
- Backend: Django (Python)
+ - Frontend: HTML, CSS, JavaScript 
+ - Backend: Django (Python)
 
 
-
+# 🔑 Prerequisites:
+ All the dependencies and required libraries are included in the file  `requirements.txt`  [See here](https://github.com/preeti13456/CityonBikes/blob/master/requirements.txt)
 
 
 ## Project Demo :hourglass:
@@ -48,8 +48,7 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 
 
 
-# 🔑 Prerequisites:
- All the dependencies and required libraries are included in the file  `requirements.txt`  [See here](https://github.com/preeti13456/CityonBikes/blob/master/requirements.txt)
+
 
 # Contribution Guidelines🏗
 
