@@ -13,7 +13,7 @@
 [![Stargazers](https://img.shields.io/github/stars/preeti13456/CityonBikes.svg?logo=github)](https://github.com/preeti13456/CityonBikes/stargazers)
 [![Issues](https://img.shields.io/github/issues/preeti13456/CityonBikes.svg?logo=github)](https://github.com/preeti13456/CityonBikes/issues)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://www.linkedin.com/in/preeti/)
-[![Contributors](https://img.shields.io/github/stars/preeti13456/CityonBikes.svg?logo=github)](https://img.shields.io/github/contributors/preeti13456/CityonBikes)
+[![Contributors](https://img.shields.io/github/contributors/preeti13456/CityonBikes.svg?logo=github)](https://img.shields.io/github/contributors/preeti13456/CityonBikes)
 
 
 Now ride Unlimited , at a fixed price!
