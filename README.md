@@ -25,8 +25,10 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 <img src = "https://github.com/akrish4/CityonBikes/blob/akrish4/cityonbikes.PNG"> </img>
  
 # Tech Stack 💻
-- HTML, CSS, JavaScript 
-- Django (Python)
+- Frontend: HTML, CSS, JavaScript 
+- Backend: Django (Python)
+
+
 
 
 
