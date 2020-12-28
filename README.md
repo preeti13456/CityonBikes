@@ -25,8 +25,8 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 <img src = "https://github.com/akrish4/CityonBikes/blob/akrish4/cityonbikes.PNG"> </img>
  
 # Tech Stack 💻
-- Frontend: HTML, CSS, JavaScript 
-- Backend: Django (Python)
+ Frontend: HTML, CSS, JavaScript 
+ Backend: Django (Python)
 
 
 
@@ -36,7 +36,7 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 
 - [![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://cityonbikes.herokuapp.com)
 
-- :movie_camera: Demo Video 👇
+- :movie_camera: Demo Video 👇 ( Check out the below video ) 
 
 <div align= "center"> 
  
