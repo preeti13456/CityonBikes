@@ -15,6 +15,7 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://www.linkedin.com/in/preeti/)
 [![Contributors](https://img.shields.io/github/contributors/preeti13456/CityonBikes.svg?logo=github)](https://img.shields.io/github/contributors/preeti13456/CityonBikes)
 
+<br>
 <img src = "https://github.com/akrish4/CityonBikes/blob/akrish4/cityonbikes.PNG"> </img>
 
 --- 
