@@ -16,20 +16,21 @@
 [![Contributors](https://img.shields.io/github/contributors/preeti13456/CityonBikes.svg?logo=github)](https://img.shields.io/github/contributors/preeti13456/CityonBikes)
 
 <br>
-<img src = "https://github.com/akrish4/CityonBikes/blob/akrish4/cityonbikes.PNG"> </img>
+
 
 # Why CityonBikes?
 We are a leading motorbike rental company that offers a diversified and exceptional range of two-wheelers on rent. We are regarded as one of the best bike rental companies in India due to our personalized service and higher commitment levels. We have a huge store of exclusive bikes where riders can choose to ride on an hourly, daily, weekly or monthly basis. You can go on a long ride.
  
+## Home Page: 
+<img src = "https://github.com/akrish4/CityonBikes/blob/akrish4/cityonbikes.PNG"> </img>
  
 # Tech Stack
 - HTML, CSS, React, Redux
 - Firebase
 - And any other can be suggested by adding an issue to Github.
 
-## :hourglass: Project Demo
 
-:computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
+## :hourglass: Project Demo
 
 [![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://cityonbikes.herokuapp.com)
 
@@ -39,7 +40,7 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 
 
 
-Website Link : [a link](https://cityonbikes.herokuapp.com/)
+
 
 
 
