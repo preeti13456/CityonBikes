@@ -35,8 +35,10 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 - [![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://cityonbikes.herokuapp.com)
 
 - :movie_camera: Demo Video 👇
-
+<div align= "center">
 [![Alt text for your video](https://img.youtube.com/vi/1-HT3EJU11I/0.jpg)](http://www.youtube.com/watch?v=1-HT3EJU11I)
+</div>
+
 
 
 
