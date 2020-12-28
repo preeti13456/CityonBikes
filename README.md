@@ -1,6 +1,6 @@
  
 <h1 align= "center"><b>CityonBikes</b></h1> 
-<h2 align= "center">Now ride Unlimited , at a fixed price!</h2>
+<h4 align= "center">Now ride Unlimited , at a fixed price!</h4>
 
 
 Now ride Unlimited , at a fixed price!
