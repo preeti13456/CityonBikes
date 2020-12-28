@@ -2,7 +2,7 @@
 <h1 align= "center"><b>CityonBikes🛵</b></h1> 
 
 <div align= "center">
-  <h3😃Now ride Unlimited , at a fixed price!</h3>
+  <h3> 😃Now ride Unlimited , at a fixed price!</h3>
 </div>
 
 
