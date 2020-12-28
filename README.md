@@ -25,7 +25,7 @@
 
 :computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
 
-[![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://cityonbikes.herokuapp.com//)
+[![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://cityonbikes.herokuapp.com)
 --- 
 
 We are a leading motorbike rental company that offers a diversified and exceptional range of two-wheelers on rent. We are regarded as one of the best bike rental companies in India due to our personalized service and higher commitment levels. We have a huge store of exclusive bikes where riders can choose to ride on an hourly, daily, weekly or monthly basis. You can go on a long ride.
