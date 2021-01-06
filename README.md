@@ -111,3 +111,15 @@ git push  origin <your_branch_name>
 **12** Voila :exclamation: You have made a PR to the CityonBikes project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
 
 
+## 💥 Issues:
+For major changes, you are welcomed to open an issue  about what you would like to contribute. Enhancements will be appreciated.
+
+#### All the Best!🥇
+
+<p align = "center">
+
+<a href="https://github.com/akrish4"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/preeti13456/CityonBikes)
+
+</p>
+
