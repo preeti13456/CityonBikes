@@ -52,8 +52,7 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 
 # Contribution Guidelines🏗
 
-- We invite you to contribute to this project and make it better. 🎇 To start contributing, follow the below guidelines: ✨
-- Read the [Code of conduct](https://github.com/preeti13456/CityonBikes/blob/master/CODE_OF_CONDUCT.md/)
+- We invite you to contribute to this project and make it better. 🎇 To start contributing, follow the below guidelines: ✨ Read the [Code of conduct](https://github.com/preeti13456/CityonBikes/blob/master/CODE_OF_CONDUCT.md/)
  
 
 **1.**  Fork [this](https://github.com/preeti13456/CityonBikes) repository.
