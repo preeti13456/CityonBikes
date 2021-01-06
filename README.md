@@ -53,5 +53,62 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 # Contribution Guidelines🏗
 
 
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
+To start contributing, follow the below guidelines: 
+
+**1.**  Fork [this](https://github.com/preeti13456/CityonBikes) repository.
+
+**2.**  Clone your forked copy of the project.
+
+```
+git clone --depth 1 https://github.com/<your_user_name>/CityonBikes.git
+```
+
+
+**3.** Navigate to the project directory :file_folder: .
+
+```
+cd CityonBikes
+```
+
+**4.**   Create a new branch.
+
+```
+git checkout -b <your_branch_name>
+```
+**5.** Perfom your desired changes to the code base.
+
+
+
+**6.** Track your changes:heavy_check_mark:
+
+```
+git add . 
+```
+
+**7.** Commit your changes .
+
+```
+git commit -m "Relevant message"
+```
+
+**8.** Push the committed changes in your feature branch to your remote repo.
+
+```
+git push -u origin <your_branch_name>
+```
+
+**9.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+
+
+**10.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+
+
+**11.** Click on `Create Pull Request`.
+
+
+
+
+**12** Voila :exclamation: You have made a PR to the CityonBikes project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
 
 
