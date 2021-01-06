@@ -18,5 +18,4 @@
 ## Expected behavior (i.e. solution)
 <!-- What should have happened? -->
 
-
-## Other Comments
+- [ ] SaturnIssue already created and assigned?
