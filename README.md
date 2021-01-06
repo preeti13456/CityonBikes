@@ -94,7 +94,7 @@ git commit -m "Relevant message"
 **8.** Push the committed changes in your feature branch to your remote repo.
 
 ```
-git push -u origin <your_branch_name>
+git push  origin <your_branch_name>
 ```
 
 **9.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
