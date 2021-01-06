@@ -52,9 +52,8 @@ We are a leading motorbike rental company that offers a diversified and exceptio
 
 # Contribution Guidelines🏗
 
-
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
-To start contributing, follow the below guidelines: 
+We invite you to contribute to this project and make it better. 🎇
+To start contributing, follow the below guidelines: ✨
 
 **1.**  Fork [this](https://github.com/preeti13456/CityonBikes) repository.
 
