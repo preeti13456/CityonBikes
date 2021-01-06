@@ -18,7 +18,7 @@ from .models import *
 ava_bike=None
 
 def home(request):
-    return redirect('/')
+    return render(request,'home.html')
 
 
 def logoutUser(request):
@@ -28,19 +28,18 @@ def logoutUser(request):
 
 @login_required(login_url="loginPage")
 def rent_now(request):
+
     print(request.POST.get('startDate2'))
     if request.method == 'POST':
 
-
-
         dic = {
-                'location' : '',
-                'sth' : '',
-                'stm' : '',
-                'eth' : '',
-                'etm' : '',
-                'bike' : ''
-            }
+            'location': '',
+            'sth': '',
+            'stm': '',
+            'eth': '',
+            'etm': '',
+            'bike': ''
+        }
 
         loc = request.POST.get('loc')
         dic['location'] = loc
@@ -57,7 +56,7 @@ def rent_now(request):
             h = int(x[0])
             m = int(x[1])
             s = 0
-            starttime = time(h,m,s)
+            starttime = time(h, m, s)
             dic['sth'] = h
             dic['stm'] = m
 
@@ -71,66 +70,62 @@ def rent_now(request):
             h = int(y[0])
             m = int(y[1])
             s = 0
-            endtime = time(h,m,s)
+            endtime = time(h, m, s)
             dic['eth'] = h
             dic['etm'] = m
         bike = request.POST.get('choose_bike')
-        dic['bike']=bike
-
+        dic['bike'] = bike
 
         flag = 0
 
         for i in dic:
-            if dic[i] == '' or dic['location']=='Pick Location' or dic['bike']=='Choose Bike':
+            if dic[i] == '' or dic['location'] == 'Pick Location' or dic['bike'] == 'Choose Bike':
                 flag = 1
 
-
-
-        if flag==1:
-            messages.info(request,'Select complete details (Location, time (from , to), Bike)')
-        elif flag==0:
-            duration = (datetime.combine(date.today(),endtime) - datetime.combine(date.today(),starttime))
+        if flag == 1:
+            messages.info(request, 'Select complete details (Location, time (from , to), Bike)')
+        elif flag == 0:
+            duration = (datetime.combine(date.today(), endtime) - datetime.combine(date.today(), starttime))
             x = (str(duration).split(":")[0])
             if x.startswith('-'):
                 duration = 0
             else:
                 duration = int(x)
 
-            ava_bike = Available_Bikes.objects.get(name=dic['bike'],location=dic['location'])
+            ava_bike = Available_Bikes.objects.get(name=dic['bike'], location=dic['location'])
             count = ava_bike.number
 
             if duration < 1:
-                messages.info(request,'Time Duration should be more than one hour')
+                messages.info(request, 'Time Duration should be more than one hour')
 
-            elif count<1 or ava_bike=='None':
-                messages.info(request,dic['bike']+' is not available at '+ dic['location'] +' centre')
+            elif count < 1 or ava_bike == 'None':
+                messages.info(request, dic['bike'] + ' is not available at ' + dic['location'] + ' centre')
 
             else:
                 l = list(dic.values())
 
-                if (dic['bike']=='Deluxe') :
-                    amount=20
-                    extra_charges=40
-                elif (dic['bike']=='Splendor Plus') :
-                    amount=25
-                    extra_charges=45
-                elif (dic['bike']=='Pleasure') :
-                    amount=30
-                    extra_charges=50
-                elif (dic['bike']=='Passion Pro') :
-                    amount=35
-                    extra_charges=55
-                elif (dic['bike']=='Royal Enfield 200CC') :
-                    amount=60
-                    extra_charges=80
+                if (dic['bike'] == 'Deluxe'):
+                    amount = 20
+                    extra_charges = 40
+                elif (dic['bike'] == 'Splendor Plus'):
+                    amount = 25
+                    extra_charges = 45
+                elif (dic['bike'] == 'Pleasure'):
+                    amount = 30
+                    extra_charges = 50
+                elif (dic['bike'] == 'Passion Pro'):
+                    amount = 35
+                    extra_charges = 55
+                elif (dic['bike'] == 'Royal Enfield 200CC'):
+                    amount = 60
+                    extra_charges = 80
 
-
-                l.append(amount*duration)
+                l.append(amount * duration)
                 l.append(extra_charges)
-                response = redirect('invoice',l)
+                response = redirect('invoice', l)
 
-                #print(Available_Bikes.objects.get(name=dic['bike'],location=dic['location']))
-                #print(Rented_Bikes.objects.get(username="Nikhil183",bike='\"\'Passion Pro\'\"'))
+                # print(Available_Bikes.objects.get(name=dic['bike'],location=dic['location']))
+                # print(Rented_Bikes.objects.get(username="Nikhil183",bike='\"\'Passion Pro\'\"'))
                 return response
 
     return render(request,'rent_now.html')
@@ -138,7 +133,7 @@ def rent_now(request):
 
 def loginPage(request):
     if request.user.is_authenticated:
-        return redirect('rent_now')
+        return redirect('home')
     else:
         if request.method == 'POST':
             username = request.POST.get('username')
@@ -148,14 +143,13 @@ def loginPage(request):
 
             if user is not None:
                 login(request, user)
-                return redirect('rent_now')
+                return redirect('home')
 
             else:
                 messages.info(request,'Username or Password is incorrect')
 
 
         return render(request,'login.html')
-
 
 
 
@@ -262,3 +256,8 @@ def about(request):
 def contact(request):
 
      return render(request,'contact.html')
+
+
+def offer(request):
+    return render(request, 'offer.html')
+

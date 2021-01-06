@@ -29,7 +29,49 @@
         <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
 
+<style>
+
+    body, html {
+  height: 100%;
+
+}
+
+
+
+.parallax {
+  /* The image used */
+background-image: url('/static/images/b1.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url('/static/images/bikebg.jpg');
+  min-height: 100%;
+}
+
+
+
+
+</style>
+
 </head>
+
 <div class="container">
             <div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true" >
                 <div class="modal-dialog" role="document">
@@ -142,7 +184,8 @@
                                     <span class="sr-only">Next</span>
                                   </a>
                                 </div>
-                            
+
+
 
                             <div class="modal-footer bikemodalclose">
                                 <button type="button" class="btn btn-secondary" id="bikemodal" data-dismiss="modal">Close</button>
@@ -232,6 +275,7 @@
         </div>
         <!--== Header Bottom End ==-->
     </header>
+
     <section id="page-title-area" class="section-padding overlay">
         <div class="container">
             <div class="row">
@@ -247,6 +291,7 @@
             </div>
         </div>
     </section>
+    <div class="parallax" ></div>
  
     <section id="about-area" class="section-padding">
         <div class="container">
@@ -272,15 +317,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
-         >
+                </div><br>
+
                 <div class="col-lg-12 d-flex justify-align-center">
                     <div class="about-image">
-                        <img src="{% static 'images/enfield2.jpg' %}" alt="JSOFT">
+                        <img src="{% static 'images/enfield2.jpg' %}" alt="JSOFT" width="360px">
+                        <img src="{% static 'images/b2.jpg' %}" alt="JSOFT" width="360px">
+                        <img src="{% static 'images/apache.jpg' %}" alt="JSOFT" width="350px">
                     </div>
                 </div>
                 <!-- About Video End -->
-            </div>
+            </div><br>
 
             <!-- About Fretutes Start -->
             <div class="about-feature-area">
@@ -314,7 +361,7 @@
             <!-- About Fretutes End -->
         </div>
     </section>
-  
+  <div class="parallax" ></div>
     <section id="our-facility" class="section-padding overlay">
         <div class="container">
             <div class="row">
@@ -351,6 +398,8 @@
                 
         </div>
     </section>
+
+    <div class="parallax" ></div>
     
     <section id="testimonial-area" class="section-padding">
         <div class="container">
@@ -391,6 +440,21 @@
             </div>
         </div>
     </section>
+
+
+<div class="parallax" >
+    <div class="bgimg-1">
+  <div class="caption"><br><br><br><br><br><br>
+  <span class="border"> <h1 align="center" style="color:white;">THANK YOU FOR VISITING US.</h1></span>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
 
     <div class="scroll-top">
         <img src="{% static 'images/bike2.png' %}" alt="JSOFT">
