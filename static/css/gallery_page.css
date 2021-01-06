@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.textWithBlurredBg {
+    display: inline-block;
+    transition: .3s;
+}
+
+.textWithBlurredBg img {
+    transition: .3s;
+}
+
+.textWithBlurredBg:hover img {
+    filter: blur(2px) brightness(60%);
+    box-shadow: 0 0 16px blue;
+}
+
+.textWithBlurredBg a {
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    top: 30%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+.textWithBlurredBg:hover :not( img) {
+    opacity: 1;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(167, 221, 255, 0.5);
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    color: #909090;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+}
+
+.logo a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(107, 110, 112, 0.4);
+}
+
+.content-container {
+    box-sizing: border-box;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.content {
+    padding-top: 15px;
+}
+
+.main-nav {
+    border-bottom: #DDDDDD 1px solid;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+a {
+    color: black;
+}
+
+i {
+    color: #909090;
+}
+
+.center-text {
+    text-align: center;
+}

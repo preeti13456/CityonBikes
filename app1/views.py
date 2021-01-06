@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from datetime import time, date, datetime
 import datetime as dt
 from qrcode import *
+from django.views.generic import ListView
 
 from PIL import Image
 import random, math
@@ -244,3 +245,10 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+class BikeListView(ListView):
+    model = Bike
+    template_name = 'bikes.html'
+    context_object_name = 'bikes'
+    ordering = ['-id']

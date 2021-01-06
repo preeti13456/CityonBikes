@@ -36,8 +36,8 @@
     
 
 </head>
-<div class="container">
-            <div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true" >
+{% comment %} <div class="container"> {% endcomment %}
+            {%comment %}<div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true" >
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -160,7 +160,7 @@
 
             </div>
         </div>
-
+ {% endcomment %}
 
 <body class="loader-active">
 
@@ -222,7 +222,7 @@
                                      <a href="{% url 'about' %}">About</a>
                                     
                                 </li>
-                               <li><a href="#" class="bikebutton">Bikes</a></li>
+                               <li><a href="{% url 'bikes' %}">Bikes</a></li>
                                 
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
 

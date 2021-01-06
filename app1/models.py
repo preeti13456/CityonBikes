@@ -18,8 +18,24 @@ class Rented_Bikes(models.Model):
 
 class Available_Bikes(models.Model):
     name = models.CharField(max_length=20, null=True)
+    
     location = models.CharField(max_length=20, null=True)
     number = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name + " - " + self.location
+
+
+CHOICES = (
+    ('Yes','Yes'),
+    ('No','No')
+)
+class Bike(models.Model):
+    name = models.CharField(max_length=100,null=True)
+    bike_image = models.ImageField(upload_to = 'bike_images')
+    price_per_hr = models.IntegerField()
+    engine_type = models.CharField(max_length=100)
+    fuel_capacity = models.IntegerField()
+    power = models.CharField(max_length=50)
+    availability = models.CharField(max_length = 5,choices=CHOICES,default='No')
+

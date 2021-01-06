@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="{% static 'css/gallery_page.css' %}">
+
+
+</head>
+        {% if bikes %}
+    <section class="section" id="features" style="position: relative; margin-top: 5rem;">
+
+        <main>
+            <section id="gallery">
+                <div class="container">
+                        <div class="row">
+                            {% for bike in bikes %}<!-- Use for loop here -->
+                                <div class="col-lg-4 mb-4">
+                                    <div class="card">
+                                        {% comment %} <div class="textWithBlurredBg"> {% endcomment %}
+                                                <img src="{{ bike.bike_image.url }}" class="card-img-top">
+                                        {% comment %} </div> {% endcomment %}
+                                        <div class="card-body">
+                                                    <div class="row mb-1">
+                                                        <div class="col-auto">
+                                                            <h5 class="card-title" style = "color:black">{{ bike.name }} </h5> 
+                                                        </div>
+                                                        <div class="col-auto mt-1">
+                                                            <h6> <p>Price per hour : ₹ {{ bike.price_per_hr }}</p>
+                                                <p>Engine Type: {{ bike.engine_type }}</p>
+                                               <p> Fuel Capacity: {{ bike.fuel_capacity }} Ltr</p>
+                                                <p>Power: {{ bike.power }}</p>
+                                                {% if bike.availability == 'Yes' %}
+                                                <p><button type="button" class="btn btn-success">Available</button></p>
+
+                                                {% else %}
+                                                    <p><button type="button" class="btn btn-secondary">Not Available</button>
+</p> </h6>
+                                                {% endif %}
+
+
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <h6>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+            </section>
+ {% else %}
+        <h1 class="text-center">Sorry no bikes images </h1>
+        {% endif %}
