@@ -19,3 +19,4 @@
 <!-- What should have happened? -->
 
 - [ ] SaturnIssue already created and assigned?
+<!-- Enter selection in tick-box -->
