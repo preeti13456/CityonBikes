@@ -2,13 +2,22 @@
 <html>
 <head>
 	<style>
-		h1.small,p.small {
-  			line-height: 0.7;
+		h1.small {
+			  line-height: 0.7;
+			  font-style:normal;
+			  font-family:Arial, Helvetica, sans-serif;
+			  color:#04dc6c;
+			  -webkit-text-stroke: green;
+			  -webkit-text-stroke-width: 0.080px;
+		}
+		p.small {
+			  line-height: 0.7;	  
 		}
 	</style>
 </head>	
 	<body>
-		<h1 class="small" align="center">Your Payment is successfully processed.</h1>
+		<h1 class="small" align="center" >Your Payment is successfully processed.</h1>
+		<center><img src="{% static 'images/tickk.png'%}" height="125"></center>
 		<p class ="small" align="center" style ="font-size:40px" >Your Ride's QR code :</p>
 		<h3 style="color:red; font-style: bold; text-align: center; ">** Please take a screenshot of the qr code or write your OTP, One is required to collect your bike!</h3>
 			
