@@ -25,7 +25,7 @@ SECRET_KEY = '002bb26496d4c217b164b81da9c3bf11290eed9421be270a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cityonbikes.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['cityonbikes.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
