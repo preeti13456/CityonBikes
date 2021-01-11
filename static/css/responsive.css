@@ -97,6 +97,7 @@
 	}
 	.about-image {
 		margin-top: 0;
+		
 	}
 	.about-feature-item {
 		margin-bottom: 0;
@@ -131,15 +132,30 @@
 	.single-our-facility {
 		margin-bottom: 0;
 	}
+	.about-image {
+		margin-top: 50px;
+		justify-content: right;
+		
+	}
 }
 
 
 /* ==== Wide Tablet Layout: 767px ==== */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.slicknav_menu {
+	
+	
+	 .slicknav_menu {
 		display: block;
+		
+	} 
+	.logo{
+		
+		position: absolute;
+		right: 100px;
+		bottom:10px ;
 	}
+	
 	.slider-right-text {
 		font-size: 16px;
 		text-align: center;
@@ -291,6 +307,10 @@
 /* ==== Mobile Layout: 320px ==== */
 
 @media only screen and (max-width: 767px) {
+
+	
+	
+
 	.slider-right-text {
 		font-size: 14px;
 		text-align: center;
@@ -392,7 +412,17 @@
 		margin-top: 50px;
 	}
 	.about-feature-item {
+
 		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about-feature-item > p{
+		font-size: small;
+	}
+	.single-our-facility > li {
+		font-size: small;
 	}
 
 
@@ -431,5 +461,7 @@
 	.single-our-facility {
 		margin-bottom: 50px;
 	}
+	/* ==== about page responsive css */
+
 
 }
