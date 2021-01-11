@@ -25,7 +25,7 @@ SECRET_KEY = '002bb26496d4c217b164b81da9c3bf11290eed9421be270a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cityonbikes.herokuapp.com']
+ALLOWED_HOSTS = ['cityonbikes.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -57,8 +57,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-                os.path.join(BASE_DIR, 'templates')
-            ],
+            os.path.join(BASE_DIR, 'templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,12 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, "static"),
-    ]
+    os.path.join(BASE_DIR, "static"),
+]
 
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
-
-
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
