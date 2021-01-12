@@ -261,16 +261,36 @@
                                     <form method="post" action="">
                                         {% csrf_token %}
                                         <div class="pick-location bookinput-item">
-                                            <select class="custom-select" name="loc" id="loc">
-                                                <option selected>Pick Location</option>
-                                                <option value="Mansarovar">Mansarovar</option>
-                                                <option value="C-Scheme">C-Scheme</option>
-                                                <option value="Sodala">Sodala</option>
-                                                <option value="Bais Godam">Bais Godam</option>
-                                                <option value="Sanganer">Sanganer</option>
-
-
-                                            </select>
+                                            <input type="submit" value="Get Location" onclick="getlocation()" id="locate">
+                                            <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+                                            <script>
+                                               function getlocation(){
+                                                  navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{
+                                                    enableHighAccuracy: true
+                                                });
+                                                }
+                                                function successCallback(position){
+                                                console.log(position);
+                                                var lat = position.coords.latitude;
+                                                 var lng = position.coords.longitude;
+                                                 var cords = lat + ' + '+lng;
+                                                 console.log(cords);
+                                                 let url = 'https://api.opencagedata.com/geocode/v1/json?q='+cords+'&key=db333ebfa79043999f9946077a32078f';
+                                                 fetch(url)
+                                                 .then(response => response.json())
+                                                 .then(data =>{
+                                                   console.log(data);
+                                                   document.body.insertAdjacentHTML(
+                                                     "beforeend",
+                                                  `<p>${data.results[0].formatted}</p>`
+                                                   );
+                                                 })
+                                                .catch(err => console.warn(err.message));
+                                                };
+                                                function errorCallback(error){
+                                                console.error(error);
+                                                } ;  
+                                            </script>
                                         </div>
 
 
