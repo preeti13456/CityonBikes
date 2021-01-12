@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div class="main-block">
+      <form action="{% url 'payment_status' %}" method="POST">
+        {% csrf_token %}
+        <script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          data-key="rzp_test_958Rc9DTUDiOTn"
+          data-amount="{{ price }}"
+          data-currency="INR"
+          data-order_id="{{ order_id }}"
+          data-buttontext="Pay with Razorpay"
+          data-name="City On Bikes"
+          data-description="Test transaction"
+          data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpWzPOB8s9WRX7JXZ96x1oPESu-eoN5YUFfDKcebTKFn7piPBS&usqp=CAU"
+          data-prefill.name="{{ name }}"
+          data-prefill.email="{{ email }}"
+          data-prefill.contact="{{ phone }}"
+          data-theme.color="#F37254"
+        ></script>
+        <input type="hidden" custom="Hidden Element" name="hidden" />
+      </form>
+    </div>
+  </body>
+</html>
