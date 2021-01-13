@@ -27,7 +27,7 @@
             width: 600px;
             margin-top: auto;
             margin-bottom: auto;
-             background-color: rgba(0, 0, 0, 0.5);
+             background-color: rgba(0, 0, 0, 0.397);
             position: relative;
             display: flex;
             justify-content: center;
@@ -41,11 +41,39 @@
 
         .form_container {
             margin-top: 20px;
+            
+        }
+        .col{margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 73%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+            
         }
 
         #form-title {
             color: #fff;
         }
+        
+        #Login-details {
+            margin: 0;
+            position: absolute;
+            top: 67%;
+            left: 50.5%;
+            -ms-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
+        }
+
+        .bottom-container{
+            margin: 0;
+            position: absolute;
+            top: 90%;
+            left: 51%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
 
         .login_btn {
             width: 100%;
@@ -76,7 +104,7 @@
         }
 
         #messages {
-            background-color: grey;
+            background-color: ;
             color: #fff;
             padding: 10px;
             margin-top: 10px;
@@ -100,12 +128,7 @@
   color: white;
  width: 300px;
 
-.col {
-  float: left;
-  width: 50%;
-  margin: auto;
-  padding: 0 50px;
-  margin-top: 6px;
+
 
     </style>
 
@@ -182,8 +205,8 @@
           </i> Login with Google+
         </a>
       </div>
-                    <form method="POST" action="rent_now/">
-                        {% csrf_token %}
+                    <form id="Login-details" method="POST" action="rent_now/">
+                         <center><p style="color: whitesmoke;"><i>Or</i></p></center>
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
@@ -207,20 +230,20 @@
                 </div>
 
 
-                {% for message in messages %}
-                    <p id="messages">{{message}}</p>
-                {% endfor %}
+                
+                    <p id="messages"></p>
+                <br><br><br><br><br><br>
                 <div class="mt-4">
                     <div class="bottom-container">
   <div class="row">
-    <div class="col">
+    <div class="col1">
       <a href="/register/" style="color:white" class="btn">Sign up</a>
     </div>
-    <div class="col">
+    <div class="col1">
       <a href="#" style="color:white" class="btn">Forgot password?</a>
     </div>
   </div>
-</div>
+</div><br><br><br><br><br><br>
 
                 </div>
             </div>
