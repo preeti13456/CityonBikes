@@ -11,7 +11,9 @@ from qrcode import *
 from PIL import Image
 import random,math
 from .models import *
+from django.http import HttpResponse
 
+import razorpay
 
 
 # Create your views here.
@@ -122,13 +124,54 @@ def rent_now(request):
 
                 l.append(amount * duration)
                 l.append(extra_charges)
-                response = redirect('invoice', l)
+                response = redirect('create_order', l)
 
                 # print(Available_Bikes.objects.get(name=dic['bike'],location=dic['location']))
                 # print(Rented_Bikes.objects.get(username="Nikhil183",bike='\"\'Passion Pro\'\"'))
                 return response
 
     return render(request,'rent_now.html')
+
+def create_order(request,l):
+    client = razorpay.Client(auth=("Key_ID", "SECRET_KEY"))
+    context = {}
+    order_currency = 'INR'
+    order_receipt = 'UNIQUE_ORDER_RECEIPT'
+    notes = {
+        'YOURNOTES': 'XXXX'}
+    order_amount = l[-1] + l[-2]
+    response = client.order.create(dict(amount=order_amount, currency=order_currency, receipt=order_receipt, notes=notes, payment_capture='0'))
+    order_id = response['id']
+    order_status = response['status']
+
+    if order_status=='created':
+        context['product_id'] = product
+        context['price'] = order_amount
+        context['name'] = name
+        context['phone'] = phone
+        context['email'] = email
+        context['order_id'] = order_id
+
+
+        return render(request, 'confirm_order.html', context)
+    return HttpResponse('<h1>Error in  create order function</h1>')
+
+
+
+def payment_status(request):
+
+    response = request.POST
+
+    params_dict = {
+        'razorpay_payment_id' : response['razorpay_payment_id'],
+        'razorpay_order_id' : response['razorpay_order_id'],
+        'razorpay_signature' : response['razorpay_signature']
+    }
+    try:
+        status = client.utility.verify_payment_signature(params_dict)
+        return render(request, 'invoice.html',[] )
+    except:
+        return render(request, 'invoice.html',[] )
 
 
 def loginPage(request):
@@ -260,4 +303,7 @@ def contact(request):
 
 def offer(request):
     return render(request, 'offer.html')
+
+
+
 

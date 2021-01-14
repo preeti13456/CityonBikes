@@ -30,5 +30,5 @@ urlpatterns = [
     path('paymentDone/<dic>',views.paymentDone , name = 'paymentDone'),
     path('offers/',views.offer),
     path('about/',views.about,name="about"),
-     path('contact/',views.contact,name="contact")
+    path('contact/',views.contact,name="contact") 
 ]

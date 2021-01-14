@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--=== Favicon ===-->
-  
+
     <title>About us</title>
 
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <!--=== FontAwesome CSS ===-->
-      <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <!--=== Theme Reset CSS ===-->
-     <link href="{% static 'css/reset.css' %}" rel="stylesheet">
+    <link href="{% static 'css/reset.css' %}" rel="stylesheet">
     <!--=== Slicknav CSS ===-->
     <link href="{% static 'css/plugins/slicknav.min.css' %}" rel="stylesheet">
     <!--=== Magnific Popup CSS ===-->
@@ -23,180 +23,187 @@
     <link href="{% static 'css/plugins/owl.carousel.min.css' %}" rel="stylesheet">
     <!--=== Gijgo CSS ===-->
     <link href="{% static 'css/plugins/gijgo.css' %}" rel="stylesheet">
-   
+
     <link href="{% static 'css/style2.css' %}" rel="stylesheet">
     <!--=== Responsive CSS ===-->
-        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
 
-<style>
+    <style>
+        body,
+        html {
+            height: 100%;
 
-    body, html {
-  height: 100%;
-
-}
-
-
-
-.parallax {
-  /* The image used */
-background-image: url('/static/images/b1.jpg');
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-1 {
-  position: relative;
-  opacity: 0.8;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url('/static/images/bikebg.jpg');
-  min-height: 100%;
-}
+        }
 
 
 
+        .parallax {
+            /* The image used */
+            background-image: url('/static/images/b1.jpg');
+            /* Full height */
+            height: 100%;
 
-</style>
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1 {
+            position: relative;
+            opacity: 0.8;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url('/static/images/bikebg.jpg');
+            min-height: 100%;
+        }
+    </style>
 
 </head>
 
 <div class="container">
-            <div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true" >
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                 <span aria-hidden="true" >×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Royal Enfield Classic 350</h4>
-                                            
-                                        </div>
-                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
-                                                <img  style="height:150px;" src="{% static 'images/enfield2.jpg' %}">
-                                               <div class="col-12 col-sm-auto">
-                                                <p>Price per hour : ₹ 60.00</p>
-                                                <p>Engine Type: 249cc liquid-cooled</p>
-                                               <p> Fuel Capacity: 13.5 Ltr</p>
-                                                <p>Power:10.74 PS @ 7500 rpm</p>
-                                            </div>
-                                        </div>
-                                                                               
+    <div class="modal fade" id="bikemodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h4 style="font-family: Amarante;margin:10px;text-align: center;">Royal Enfield
+                                            Classic 350</h4>
+
                                     </div>
-                                </div>
-                               <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Deluxe</h4>
-                                            
-                                        </div>
-                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
-                                            <img  style="height:150px;" src="{% static 'images/deluxe.png' %}">
-                                            <div class="col-12 col-sm-auto">
-                                                <p>Price per hour : ₹ 20.00</p>
-                                                <p>Engine Type: 249cc liquid-cooled</p>
-                                               <p> Fuel Capacity: 13.5 Ltr</p>
-                                                <p>Power:10.74 PS @ 7500 rpm</p>
-                                            </div>
-                                        </div>
-                                                                                
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Splender Plus</h4>
-                                            
-                                        </div>
-                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
-                                            <img  style="height:150px;" src="{% static 'images/Splender.jpg' %}">
-                                            <div class="col-12 col-sm-auto">
-                                                <p>Price per hour : ₹ 25.00</p>
-                                                <p>Engine Type: 249cc liquid-cooled</p>
-                                               <p> Fuel Capacity: 13.5 Ltr</p>
-                                                <p>Power:10.74 PS @ 7500 rpm</p>
-                                            </div>
-                                            </div>
-                                                                               
+                                    <div class="col-12 d-flex justify-align-center"
+                                        style="align-content: center; font-family: Amarante">
+                                        <img style="height:150px;" src="{% static 'images/enfield2.jpg' %}">
+                                        <div class="col-12 col-sm-auto">
+                                            <p>Price per hour : ₹ 60.00</p>
+                                            <p>Engine Type: 249cc liquid-cooled</p>
+                                            <p> Fuel Capacity: 13.5 Ltr</p>
+                                            <p>Power:10.74 PS @ 7500 rpm</p>
                                         </div>
                                     </div>
-                                
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Pleasure</h4>
-                                            
-                                        </div>
-                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
-                                            <img  style="height:150px;" src="{% static 'images/Pleasure.png' %}">
-                                           <div class="col-12 col-sm-auto">
-                                                <p>Price per hour : ₹ 30.00</p>
-                                                <p>Engine Type: 249cc liquid-cooled</p>
-                                               <p> Fuel Capacity: 13.5 Ltr</p>
-                                                <p>Power:10.74 PS @ 7500 rpm</p>
-                                            </div>
-                                        </div>                                     
-                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12">
-                                            <h4 style="font-family: Amarante;margin:10px;text-align: center;">Passion Pro</h4>
-                                            
-                                        </div>
-                                        <div class="col-12 d-flex justify-align-center" style="align-content: center; font-family: Amarante">
-                                            <img  style="height:150px;" src="{% static 'images/passion.png' %}">
-                                           <div class="col-12 col-sm-auto">
-                                                <p>Price per hour : ₹ 30.00</p>
-                                                <p>Engine Type: 249cc liquid-cooled</p>
-                                               <p> Fuel Capacity: 13.5 Ltr</p>
-                                                <p>Power:10.74 PS @ 7500 rpm</p>
-                                            </div>
-                                        </div>                                     
-                                     </div>
-                                </div>
 
                                 </div>
-                                  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only" >Previous</span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#carouselExample" style="color: black" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div>
-
-
-
-                            <div class="modal-footer bikemodalclose">
-                                <button type="button" class="btn btn-secondary" id="bikemodal" data-dismiss="modal">Close</button>
                             </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h4 style="font-family: Amarante;margin:10px;text-align: center;">Deluxe</h4>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-align-center"
+                                        style="align-content: center; font-family: Amarante">
+                                        <img style="height:150px;" src="{% static 'images/deluxe.png' %}">
+                                        <div class="col-12 col-sm-auto">
+                                            <p>Price per hour : ₹ 20.00</p>
+                                            <p>Engine Type: 249cc liquid-cooled</p>
+                                            <p> Fuel Capacity: 13.5 Ltr</p>
+                                            <p>Power:10.74 PS @ 7500 rpm</p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h4 style="font-family: Amarante;margin:10px;text-align: center;">Splender Plus
+                                        </h4>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-align-center"
+                                        style="align-content: center; font-family: Amarante">
+                                        <img style="height:150px;" src="{% static 'images/Splender.jpg' %}">
+                                        <div class="col-12 col-sm-auto">
+                                            <p>Price per hour : ₹ 25.00</p>
+                                            <p>Engine Type: 249cc liquid-cooled</p>
+                                            <p> Fuel Capacity: 13.5 Ltr</p>
+                                            <p>Power:10.74 PS @ 7500 rpm</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h4 style="font-family: Amarante;margin:10px;text-align: center;">Pleasure</h4>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-align-center"
+                                        style="align-content: center; font-family: Amarante">
+                                        <img style="height:150px;" src="{% static 'images/Pleasure.png' %}">
+                                        <div class="col-12 col-sm-auto">
+                                            <p>Price per hour : ₹ 30.00</p>
+                                            <p>Engine Type: 249cc liquid-cooled</p>
+                                            <p> Fuel Capacity: 13.5 Ltr</p>
+                                            <p>Power:10.74 PS @ 7500 rpm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <h4 style="font-family: Amarante;margin:10px;text-align: center;">Passion Pro
+                                        </h4>
+
+                                    </div>
+                                    <div class="col-12 d-flex justify-align-center"
+                                        style="align-content: center; font-family: Amarante">
+                                        <img style="height:150px;" src="{% static 'images/passion.png' %}">
+                                        <div class="col-12 col-sm-auto">
+                                            <p>Price per hour : ₹ 30.00</p>
+                                            <p>Engine Type: 249cc liquid-cooled</p>
+                                            <p> Fuel Capacity: 13.5 Ltr</p>
+                                            <p>Power:10.74 PS @ 7500 rpm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" style="color: black" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+
+                    <div class="modal-footer bikemodalclose">
+                        <button type="button" class="btn btn-secondary" id="bikemodal"
+                            data-dismiss="modal">Close</button>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
+
+</div>
+</div>
 
 
 <body class="loader-active">
@@ -210,21 +217,21 @@ background-image: url('/static/images/b1.jpg');
                 <div class="row">
                     <!--== Single HeaderTop Start ==-->
                     <div class="col-lg-3 text-left">
-                        <i class="fa fa-map-marker"></i>  Mansarovar, Jaipur, India
+                        <i class="fa fa-map-marker"></i> Mansarovar, Jaipur, India
                     </div>
-                   
+
                     <div class="col-lg-3 text-center">
-                        <i class="fa fa-mobile"></i> +91 9638527410
+                        <i class="fa fa-mobile"></i><a style="text-decoration: none; color:white;" href="+91 9638527410">+91 9638527410</a>
                     </div>
-             
+
                     <div class="col-lg-3 text-center">
-                        <i class="fa fa-clock-o"></i>  Mon-Sun 06.00 AM - 11.00 PM
+                        <i class="fa fa-clock-o"></i> Mon-Sun 06.00 AM - 11.00 PM
                     </div>
-                    
+
                     <div class="col-lg-3 text-right">
                         <div class="header-social-icons">
                             <a href="#"><i class="fa fa-instagram"></i></a>
-                          
+
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                         </div>
@@ -233,7 +240,7 @@ background-image: url('/static/images/b1.jpg');
                 </div>
             </div>
         </div>
-     
+
         <div id="header-bottom">
             <div class="container">
                 <div class="row">
@@ -241,21 +248,21 @@ background-image: url('/static/images/b1.jpg');
                     <div class="col-lg-4">
                         <a href="/" class="logo" style="font-size: 25px;">
                             CITY ON BIKES
-                           <i class="fa fa-motorcycle" ></i>
+                            <i class="fa fa-motorcycle"></i>
                         </a>
                     </div>
-                 
+
                     <div class="col-lg-8 d-none d-xl-block">
-                       <nav class="mainmenu alignright">
+                        <nav class="mainmenu alignright">
                             <ul>
-                                 <li><a href="{% url 'rent_now' %}">RENT NOW</a></li>
+                                <li><a href="{% url 'rent_now' %}">RENT NOW</a></li>
 
                                 <li class="active">
                                     <a href="#">About</a>
-                                    
+
                                 </li>
                                 <li><a href="#" class="bikebutton">Bikes</a>
-                                
+
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
 
                                 <li>
@@ -291,8 +298,8 @@ background-image: url('/static/images/b1.jpg');
             </div>
         </div>
     </section>
-    <div class="parallax" ></div>
- 
+    <div class="parallax"></div>
+
     <section id="about-area" class="section-padding">
         <div class="container">
             <div class="row">
@@ -313,7 +320,11 @@ background-image: url('/static/images/b1.jpg');
                     <div class="display-table">
                         <div class="display-table-cell">
                             <div class="about-content">
-                                <p>We want you to ditch the tour guides and unkept promises to travel whenever you feel like you need a break. At City On Bikes, you will rediscover the joy of travelling as we bring you the best handpicked and carefully curated tours, activities and attractions in and around your city. We give you the freedom to be spontaneous, because the best holidays are!</p>
+                                <p>We want you to ditch the tour guides and unkept promises to travel whenever you feel
+                                    like you need a break. At City On Bikes, you will rediscover the joy of travelling
+                                    as we bring you the best handpicked and carefully curated tours, activities and
+                                    attractions in and around your city. We give you the freedom to be spontaneous,
+                                    because the best holidays are!</p>
                             </div>
                         </div>
                     </div>
@@ -336,14 +347,18 @@ background-image: url('/static/images/b1.jpg');
                     <div class="col-lg-4">
                         <div class="about-feature-item active">
                             <i class="fa fa-motorcycle"></i>
-                            <p>Our team of ninjas aim to bridge the gap between bike fanatics and their need for a perfect go-to .Whether you’re a student in a new city or someone who just joined work - you can rent a bike </p>
+                            <p>Our team of ninjas aim to bridge the gap between bike fanatics and their need for a
+                                perfect go-to .Whether you’re a student in a new city or someone who just joined work -
+                                you can rent a bike </p>
                         </div>
                     </div>
-                 
+
                     <div class="col-lg-4">
                         <div class="about-feature-item">
                             <i class="fa fa-motorcycle"></i>
-                            <p>Whether you’re a startup with a small sales team or a food delivery giant, a logistics company or a renowned restaurant - for everything that depends on two wheels - ‘ONN Bikes Hai Na’!</p>
+                            <p>Whether you’re a startup with a small sales team or a food delivery giant, a logistics
+                                company or a renowned restaurant - for everything that depends on two wheels - ‘ONN
+                                Bikes Hai Na’!</p>
                         </div>
                     </div>
                     <!-- Single Fretutes End -->
@@ -352,7 +367,9 @@ background-image: url('/static/images/b1.jpg');
                     <div class="col-lg-4">
                         <div class="about-feature-item">
                             <i class="fa fa-motorcycle"></i>
-                            <p>In Jaipur, there are many points and forts are to visit, and for this, you need too much time. If you want to save time to enjoy your visit to Jaipur then, you should go for hiring rented bikes from COB only. </p>
+                            <p>In Jaipur, there are many points and forts are to visit, and for this, you need too much
+                                time. If you want to save time to enjoy your visit to Jaipur then, you should go for
+                                hiring rented bikes from COB only. </p>
                         </div>
                     </div>
                     <!-- Single Fretutes End -->
@@ -361,7 +378,7 @@ background-image: url('/static/images/b1.jpg');
             <!-- About Fretutes End -->
         </div>
     </section>
-  <div class="parallax" ></div>
+    <div class="parallax"></div>
     <section id="our-facility" class="section-padding overlay">
         <div class="container">
             <div class="row">
@@ -376,7 +393,7 @@ background-image: url('/static/images/b1.jpg');
                             <li>We Provide Free Assistance On Arrival And Departure.</li>
                             <li>Simplest Bike Rental Process For Hassle-Free Ride Experience.</li>
                             <li>Large Number Of Variety Of Bike Accessories On Rent.</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -387,20 +404,20 @@ background-image: url('/static/images/b1.jpg');
                             <li>Zero Security Deposit & No Any Hidden Charges.</li>
                             <li>Customer’s Satisfaction Is Our Only Target.</li>
                             <li>Select Location, Pickup & Drop Off Time</li>
-                             <li>You Can Make Your Booking On Hourly Or Daily Basis.</li>
-                             <li>Booking And Support 24X7</li>
-                             <li>100% Secure Payment And Verified Bikes.</li>
-                            
+                            <li>You Can Make Your Booking On Hourly Or Daily Basis.</li>
+                            <li>Booking And Support 24X7</li>
+                            <li>100% Secure Payment And Verified Bikes.</li>
+
                         </ul>
                     </div>
                 </div>
-    
-                
-        </div>
+
+
+            </div>
     </section>
 
-    <div class="parallax" ></div>
-    
+    <div class="parallax"></div>
+
     <section id="testimonial-area" class="section-padding">
         <div class="container">
             <div class="row">
@@ -418,21 +435,27 @@ background-image: url('/static/images/b1.jpg');
             <div class="row">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="testimonial-content">
-                   
+
                         <div class="single-testimonial">
-                            <p> After too many dissatisfactory bike rentals, I almost gave up on them. The regular problems like physical condition of bike, their improper functioning seem to have no end. My experience with GoBikes rental really stands out. The kind of service and high quality bikes they provide cannot be questioned. </p>
+                            <p> After too many dissatisfactory bike rentals, I almost gave up on them. The regular
+                                problems like physical condition of bike, their improper functioning seem to have no
+                                end. My experience with GoBikes rental really stands out. The kind of service and high
+                                quality bikes they provide cannot be questioned. </p>
                             <h3>Amader Tuni</h3>
                             <div class="client-logo">
                                 <img src="{% static 'images/client/client-pic-3.jpg' %}" alt="JSOFT">
                             </div>
                         </div>
-              
+
                         <div class="single-testimonial">
-                            <p>I recently rented Avenger Street 220 for a day through their website which is super easy to use. It has clear step by step instructions for the entire booking process. There is no need for extensive documentation. I affirm you the process of renting at GoBikes is highly time effective. </p>
+                            <p>I recently rented Avenger Street 220 for a day through their website which is super easy
+                                to use. It has clear step by step instructions for the entire booking process. There is
+                                no need for extensive documentation. I affirm you the process of renting at GoBikes is
+                                highly time effective. </p>
                             <h3>Vongchong Smith</p>
-                             <div class="client-logo">
-                                <img src="{% static 'images/client/client-pic-2.jpg' %}" alt="JSOFT">
-                            </div>
+                                <div class="client-logo">
+                                    <img src="{% static 'images/client/client-pic-2.jpg' %}" alt="JSOFT">
+                                </div>
                         </div>
                         <!--== Single Testimoial End ==-->
                     </div>
@@ -442,14 +465,16 @@ background-image: url('/static/images/b1.jpg');
     </section>
 
 
-<div class="parallax" >
-    <div class="bgimg-1">
-  <div class="caption"><br><br><br><br><br><br>
-  <span class="border"> <h1 align="center" style="color:white;">THANK YOU FOR VISITING US.</h1></span>
-  </div>
-</div>
+    <div class="parallax">
+        <div class="bgimg-1">
+            <div class="caption"><br><br><br><br><br><br>
+                <span class="border">
+                    <h1 align="center" style="color:white;">THANK YOU FOR VISITING US.</h1>
+                </span>
+            </div>
+        </div>
 
-</div>
+    </div>
 
 
 
@@ -488,17 +513,16 @@ background-image: url('/static/images/b1.jpg');
     <script src="{% static 'js/plugins/slicknav.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
-     <script>
-        
-            $('.bikebutton').click(function()
-            {
+    <script>
+
+        $('.bikebutton').click(function () {
             $('#bikemodal').modal("toggle");
             $('#bikemodal').modal("show");
-            });
-            $(".bikemodalclose").click(function(){
+        });
+        $(".bikemodalclose").click(function () {
             $('#bikemodal').modal("hide");
-            });
-            
+        });
+
     </script>
 
 </body>
