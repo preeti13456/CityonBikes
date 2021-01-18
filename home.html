@@ -1,0 +1,433 @@
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <link href="{% static 'css/reset.css' %}" rel="stylesheet">
+    <!--=== Slicknav CSS ===-->
+    <link href="{% static 'css/plugins/slicknav.min.css' %}" rel="stylesheet">
+    <!--=== Magnific Popup CSS ===-->
+    <link href="{% static 'css/plugins/magnific-popup.css' %}" rel="stylesheet">
+    <!--=== Owl Carousel CSS ===-->
+    <link href="{% static 'css/plugins/owl.carousel.min.css' %}" rel="stylesheet">
+    <!--=== Gijgo CSS ===-->
+    <link href="{% static 'css/plugins/gijgo.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+    <!--=== Responsive CSS ===-->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- build:css css/main.css -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+  <!-- endbuild -->
+  <title>CITY ON BIKES</title>
+  <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+  <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+    .card {
+      height:400px;
+      margin: 20px;
+      color: black;
+    }
+
+    .bike-row {
+
+      img {
+        border-radius:50px;
+        height:200px;
+      }
+    }
+    footer {
+      border-top: 1px gold solid;
+    }
+    .work-row {
+      background: #f1f1f1;
+      border-radius: 50px;
+      color: black;
+    }
+
+    body {
+      background: lemonchiffon;
+    }
+  </style>
+
+
+</head>
+
+<body class="bg-dark text-light">
+
+  <div id="header-top" class="d-none d-xl-block">
+    <div class="container">
+      <div class="row" style="color: white;">
+        <!--== Single HeaderTop Start ==-->
+        <div class="col-lg-3 text-left">
+          <i class="fa fa-map-marker"></i> Mansarovar, Jaipur, India
+        </div>
+        <!--== Single HeaderTop End ==-->
+
+        <!--== Single HeaderTop Start ==-->
+        <div class="col-lg-3 text-center">
+          <i class="fa fa-mobile"></i><a style="text-decoration: none; color:white;" href="+91 9638527410">+91 9638527410</a>
+        </div>
+        <!--== Single HeaderTop End ==-->
+
+        <!--== Single HeaderTop Start ==-->
+        <div class="col-lg-3 text-center">
+          <i class="fa fa-clock-o"></i> Mon-Sun 07.00 AM - 11.59 PM
+        </div>
+        <!--== Single HeaderTop End ==-->
+
+        <!--== Social Icons Start ==-->
+        <div class="col-lg-3 text-right">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!--== Social Icons End ==-->
+    </div>
+  </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark"
+    style="font-family: Amarante;">
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a style="color:gold;" class="navbar-brand" href="/">CITY ON BIKES</a><i class="fa fa-motorcycle fa-2x" aria-hidden="true"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <ul class="nav" >
+
+        <li class="nav-item active">
+          <a style="color:gold;" class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-4 text-right">
+      <ul class="nav">
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="offers">Offers Section</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="rent_now">Rent Now</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="loginPage">Login</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:gold;" class="nav-link" href="register">Sign Up</a>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-light" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="jumbotron d-block"
+          style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url({% static 'images/image.jpg' %}); background-repeat: no-repeat; background-size: cover">
+          <div class="container">
+            <div class="row row-header">
+              <div class="col-12 col-sm-8" style="color:white">
+
+                <h1>City on Bikes <i class="fa fa-motorcycle" style="padding :5%;" aria-hidden="true"></i></h1>
+                <p class="d-none d-sm-block">Now ride Unlimited , at a fixed price! </p>
+                <p> We are a leading motorbike rental company that offers a diversified and exceptional range of
+                  two-wheelers on rent. We are regarded as one of the best bike rental companies in India due to our
+                  personalized service and higher commitment levels. We have a huge store of exclusive bikes where
+                  riders can choose to ride on an hourly, daily, weekly or monthly basis. You can go on a long ride.</p>
+
+
+                <div class="row col-md-4 col-sm-6">
+                  <a href="register/"><span class="btn btn-block btn-warning reservebutton"
+                      style=" background-color: rgb(255, 217, 0);">Sign Up Now!</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <a class="carousel-control-prev" style="left:0; width:60px" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" style="right:0; width:60px" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+  <br><br>
+
+
+  <div class="container ">
+    <div class="col-12 col-4 d-flex justify-content-center font-style: italic;">
+
+      <h2 style="color:gold;font-family: Amarante;">A Bike For Every One </h2><br>
+    </div>
+
+    <h5 style="text-align: center">We Offer Bike of Different Category and Range. So that You Choose What Fits Your
+      Style And Passion</h5>
+
+    <div class="row col-lg-12 col-sm-auto d-flex justify-content-center bike-row">
+
+      <div class="row-content">
+        <img src="{% static 'images/pleasure.png' %}" style="border-radius:25px; " width="200px">
+        <div class="row-text">
+          <h3>Slow & Safety</h3>
+        </div>
+      </div>
+
+      <div class="row-content">
+        <img src="{% static 'images/passion.png' %}" style="border-radius:25px; " width="200px">
+        <div class="row-text">
+          <h3>Splendid</h3>
+        </div>
+      </div>
+
+      <div class="row-content">
+        <img src="{% static 'images/apache.jpg' %}" style="border-radius:25px; " width="200px">
+        <div class="row-text">
+          <h3> Fast & Furious</h3>
+        </div>
+      </div>
+
+      <div class="row-content">
+        <img src="{% static 'images/enfield2.jpg' %}" style="border-radius:25px; " width="200px">
+        <div class="row-text">
+          <h3>Luxury & cruisers</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+  <div class="container ">
+    <div class="col-12 col-4 d-flex justify-content-center font-style: italic;">
+
+      <h2 style="color:gold;font-family: Amarante;">HOW WE WORK </h2>
+
+    </div>
+    <div class="row col-lg-12 col-sm-auto d-flex justify-content-center work-row">
+      <div class="row-content">
+        <img src="{% static 'images/bike.png' %}">
+        <div class="row-text">
+          <h3>Select your bike</h3>
+        </div>
+      </div>
+      <div class="row-content">
+        <img src="{% static 'images/cart.png' %}">
+        <div class="row-text">
+          <h3>Add to cart</h3>
+        </div>
+      </div>
+      <div class="row-content">
+        <img src="{% static 'images/pick.png' %}">
+        <div class="row-text">
+          <h3>Pick ur bike !</h3>
+        </div>
+      </div>
+      <div class="row-content">
+        <img src="{% static 'images/ride.png' %}">
+        <div class="row-text">
+          <h3>Ride unlimited!</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  {# Customer's Voice #}
+<div class="" style="text align: center; margin-top:80px">
+
+  <h1 style="color:gold;text-align: center">Our Customer's Voice</h1>
+</div>
+
+
+   <div class="row">
+                <div class="col-lg-8 col-md-12 m-auto">
+                    <div class="testimonial-content">
+
+                        <div class="single-testimonial">
+                            <p> After too many dissatisfactory bike rentals, I almost gave up on them. The regular
+                                problems like physical condition of bike, their improper functioning seem to have no
+                                end. My experience with GoBikes rental really stands out. The kind of service and high
+                                quality bikes they provide cannot be questioned. </p>
+                            <h3>Amader Tuni</h3>
+                            <div class="client-logo">
+                                <img src="{% static 'images/client/client-pic-3.jpg' %}" alt="JSOFT">
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <p>I recently rented Avenger Street 220 for a day through their website which is super easy
+                                to use. It has clear step by step instructions for the entire booking process. There is
+                                no need for extensive documentation. I affirm you the process of renting at GoBikes is
+                                highly time effective. </p>
+                            <h3>Vongchong Smith</p>
+                                <div class="client-logo">
+                                    <img src="{% static 'images/client/client-pic-2.jpg' %}" alt="JSOFT">
+                                </div>
+                        </div>
+                        <!--== Single Testimoial End ==-->
+                    </div>
+                </div>
+            </div>
+
+
+
+  <br><br>
+  <!-- Footer -->
+<footer class="bg-dark text-center text-lg-start text-light">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">Sign up</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Login</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Home</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">About</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">...</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">Contact</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Rent</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Offer</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: black; color:white;">
+    © 2020 Copyright:
+    <a class="text-light" href="">CityOnBikes</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+
+    $(document).ready(function () {
+
+      $('.reservebutton').click(function () {
+        $('#reserveform').modal("toggle");
+        $('#reserveform').modal("show");
+      });
+      $(".reservemodalclose").click(function () {
+        $('#reserveform').modal("hide");
+      });
+
+    });
+
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+
+
+</html>
