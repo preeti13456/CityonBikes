@@ -239,8 +239,8 @@ def register(request):
                 user = form.cleaned_data.get('username')
                 messages.success(request, "Account created for " + user)
                 email = form.cleaned_data.get('email')
-                send_mail("senders email",
-                          "password", str(email))
+#                 send_mail("senders email",
+#                           "password", str(email))
                 return redirect('loginPage')
 
         context = {'form': form}
