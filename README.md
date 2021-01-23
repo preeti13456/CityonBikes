@@ -106,9 +106,33 @@ git push  origin <your_branch_name>
 **11.** Click on `Create Pull Request`.
 
 
-
-
 **12** Voila :exclamation: You have made a PR to the CityonBikes project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
+
+# Installations
+
+After cloning the repo, run the following commands in the terminal to set up the environment to work on the project.
+
+## Frontend Installations
+
+**1.**  Install dependencies
+
+```
+ pip install -r requirements.txt
+ ```
+ 
+ **2.**  To create database
+ 
+ ```python
+ python manage.py makemigrations
+ python manage.py migrate
+```
+
+**3.**  For running the server
+
+```python
+ python manage.py runserver
+```
+This will start the project and you can view it on ```127.0.0.1:8000```.
 
 
 ## 💥 Issues:
