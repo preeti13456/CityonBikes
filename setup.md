@@ -11,6 +11,6 @@
   * Install the requirements: `$ pip install -r requirements.txt`
   * Make migrations `$ python manage.py makemigrations`
   * Migrate the changes to the database `$ python manage.py migrate`
-  * Create admin `$ python manage.py createsuperuser`
+  * Create admin `$ winpty python manage.py createsuperuser`
   * Run the server `$ python manage.py runserver`
 This will start the project and you can view it on 127.0.0.1:8000.
