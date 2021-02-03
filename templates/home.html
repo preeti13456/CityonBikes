@@ -47,13 +47,12 @@
       color: black;
     }
 
-    .bike-row {
+    .bike-row img{
 
-      img {
         border-radius:50px;
         height:200px;
-      }
     }
+    
     footer {
       border-top: 1px gold solid;
     }
@@ -163,7 +162,7 @@
           style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url({% static 'images/image.jpg' %});">
           <div class="container">
             <div class="row row-header">
-              <div class="col-12 col-sm-12" style="color:Maroon">
+              <div class="col-12 col-sm-12" style="color: white">
 
                 <h1>City on Bikes <i class="fa fa-motorcycle" style="padding :5%;" aria-hidden="true"></i></h1>
                 <p class="d-none d-sm-block">Now ride Unlimited , at a fixed price! </p>
@@ -187,7 +186,7 @@
     </div>
     <div class="carousel-item" data-bs-interval="10000">
       <div class="jumbotron d-block"
-          style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url({% static 'images/road.jpg' %}); background-repeat: no-repeat; background-size: cover">
+          style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url({% static 'images/road.jpg' %}); background-repeat: no-repeat; background-size: cover">
           <div class="container">
             <div class="row row-header">
               <div class="col-12 col-sm-8" style="color:white">
@@ -298,7 +297,7 @@
   </div>
 
   {# Customer's Voice #}
-<div class="" style="text align: center; margin-top:80px">
+<div style="text-align: center; margin-top:80px">
 
   <h1 style="color:gold;text-align: center">Our Customer's Voice</h1>
 </div>
