@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib.auth.forms import UserCreationForm
-from .forms import CreateUserForm
+from .forms import CreateUserForm, RestorePasswordForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -222,6 +222,22 @@ def send_mail(sender_email, password, recievers_email):
     )
     server.quit()
 # ..........................................................
+
+
+def forgotPassword(request):
+        form = RestorePasswordForm()
+
+        if request.method == 'POST':
+            form = RestorePasswordForm(request.POST)
+
+            if form.is_valid():                
+                email = form.cleaned_data.get('email')
+#                 send_mail("senders email",
+#                           "password", str(email))
+                return redirect('loginPage')
+
+        context = {'form': form}
+        return render(request, 'forgot_password.html', context)
 
 
 def register(request):

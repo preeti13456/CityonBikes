@@ -26,6 +26,7 @@ urlpatterns = [
     path('loginPage/',views.loginPage, name = "loginPage") ,
     path('rent_now/',views.rent_now, name="rent_now") ,
     path('logoutUser/',views.logoutUser , name = "logoutUser") ,
+    path('forgot_password/',views.forgotPassword , name = "forgotPassword") ,
     path('invoice/<dic>',views.invoice , name = 'invoice'),
     path('paymentDone/<dic>',views.paymentDone , name = 'paymentDone'),
     path('offers/',views.offer),
