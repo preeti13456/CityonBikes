@@ -51,7 +51,7 @@ def rent_now(request):
 
         x = (request.POST.get('startDate2'))
         if x == "":
-            print('m hu jiyan m hu bda taktvar')
+            print('Missing start Date')
         if x != "":
             x = request.POST.get('startDate2').split(':')
             if x[0].startswith('0'):

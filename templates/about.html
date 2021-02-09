@@ -24,7 +24,7 @@
     <!--=== Gijgo CSS ===-->
     <link href="{% static 'css/plugins/gijgo.css' %}" rel="stylesheet">
 
-    <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <!--=== Responsive CSS ===-->
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
@@ -53,15 +53,10 @@
 
         .bgimg-1 {
             position: relative;
-            opacity: 0.8;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-
-        }
-
-        .bgimg-1 {
             background-image: url('/static/images/bikebg.jpg');
             min-height: 100%;
         }
@@ -283,22 +278,24 @@
         <!--== Header Bottom End ==-->
     </header>
 
-    <section id="page-title-area" class="section-padding overlay">
-        <div class="container">
-            <div class="row">
-                <!-- Page Title Start -->
-                <div class="col-lg-12">
-                    <div class="section-title  text-center">
-                        <h2>About US</h2>
-                        <span class="title-line"><i class="fa fa-motorcycle"></i></span>
-                        <p>We love bikes. We love travelling. And, we want you to love them too! </p>
+    <div class="parallax">
+
+        <section id="about-title-area" class="section-padding overlay">
+            <div class="container">
+                <div class="row">
+                    <!-- Page Title Start -->
+                    <div class="col-lg-12">
+                        <div class="section-title  text-center">
+                            <h2>About US</h2>
+                            <span class="title-line"><i class="fa fa-motorcycle"></i></span>
+                            <p>We love bikes. We love travelling. And, we want you to love them too! </p>
+                        </div>
                     </div>
+                    <!-- Page Title End -->
                 </div>
-                <!-- Page Title End -->
             </div>
-        </div>
-    </section>
-    <div class="parallax"></div>
+        </section>
+    </div>
 
     <section id="about-area" class="section-padding">
         <div class="container">
@@ -306,7 +303,6 @@
                 <!-- Section Title Start -->
                 <div class="col-lg-12">
                     <div class="section-title  text-center">
-                        <h2>About us</h2>
                         <span class="title-line"><i class="fa fa-motorcycle"></i></span>
                         <p>Our mission is to make your spontaneous trips easy and affordable</p>
                     </div>
